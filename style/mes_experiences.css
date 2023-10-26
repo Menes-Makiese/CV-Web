@@ -1,0 +1,64 @@
+.section_mes_experiences{
+    background-color: #2a0000;
+}
+.section_mes_experiences h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+.section_mes_experiences p{
+    text-align: justify;
+}
+.mes_experiences{
+    display: flex;    
+    justify-content:flex-start; 
+    padding-bottom: 20px;      
+}
+.icone_experiences{
+    opacity: 0.3;
+    transition: opacity 0.5s;
+    margin-right: 150px;
+}
+.icone_experiences:hover{
+    opacity: 1;
+}
+.lien_icone{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.detail_experiences{
+    display: none;
+    flex-direction:column;
+    justify-content:center;
+    padding: 20px;
+    background-color: #3a0000 ;
+    border-radius:10px;
+}
+.detail_experiences h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.icone_experiences:hover + .detail_experiences{  
+    display: flex;
+}
+
+@media screen and (max-width: 996px) {
+    .mes_experiences{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        margin: auto;        
+    }
+    .section_mes_experiences h1 {
+        text-align: center;
+    }
+
+    .detail_experiences{
+        display: flex;
+        justify-content: center;
+    }
+
+    .icone_experiences{
+        opacity:1;
+    }
+}

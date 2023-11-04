@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/mes_experiences.css">
     <link rel="stylesheet" href="style/ma_scolarite.css">
     <link rel="stylesheet" href="style/mes_centres_interet.css">
+    <link rel="stylesheet" href="style/mes_competences.css">
     <script src="bienvenue.js" defer></script>
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
 </head>
@@ -24,9 +25,10 @@
                 <img src="image/favicon-32x32.png" alt="logo Menes Makiese"class="lien_icone_accueil">
             </a>          
             <div>         
-                <a href="#a_propos" class="cta">A propos</a>                       
-                <a href="#mes_experiences" class="cta">Experiences</a>                                                             
+                <a href="#a_propos" class="cta">A propos</a>
                 <a href="#ma_scolarite" class="cta">Scolarité</a>
+                <a href="#mes_competences" class="cta">Compétences</a>                       
+                <a href="#mes_experiences" class="cta">Experiences</a>               
                 <a href="#mes_centres_interet" class="cta">Centres d'interet</a>                  
             </div>             
         </nav>
@@ -38,7 +40,7 @@
                     <img src ="image/photomenesmakiese.jpg"alt="photo de Menes Makiese"class="border_img">
                 </a>                    
                 <h1>Menes Makiese</h1>                                 
-                <h2>Formation Developpeur Web</h2>                                
+                <h2>Developpeur Web en Alternance</h2>                                
             </div>   
         </section>       
         <section class="section_a_propos" >           
@@ -107,6 +109,31 @@
                         Cette formation a été fait au CIEFA du groupe IGS dans le campus de Paris               
                     </p>     
                 </div>       
+            </div>
+        </section>
+        <section class="section_mes_competences">
+            <h1 id="mes_competences">Mes Competences</h1>                       
+            <div class="competences">
+                <div class="nom">
+                    <button id="htmlBtn">HTML</button>
+                    <button id="cssBtn">CSS</button>
+                    <button id="javascriptBtn">JavaScript</button>
+                    <button id="githubBtn">GitHub</button>
+                </div>
+                <div class="bar_container">
+                    <div class="bar">
+                        <div class="progress" id="htmlProgress"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress" id="cssProgress"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress" id="javascriptProgress"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="progress" id="githubProgress"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section_mes_experiences">                            

@@ -57,6 +57,8 @@ section {
 h1{
     text-decoration: underline #8b008b	3px;
     text-underline-offset: 10px;
+    font-size: 3em;
+    text-align: center;
 }
 em {
     color: darkviolet;

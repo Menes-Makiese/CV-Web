@@ -1,0 +1,80 @@
+.section_mes_competences
+{
+  
+  background-color: #5a0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.competences
+{
+  display: flex;
+  border:2px solid black;
+  border-radius: 20px;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 250px;
+  padding: 30px;
+  background-color: #2a0000;
+}
+
+.competences::before
+{
+  content: "Langage & Gestionnaire";
+  position: absolute;
+  top:-22.5px;
+  left:30px;
+  padding: 10px 20px;
+  background-color: #2a0000;
+  border-radius: 5px;
+  border: 2px solid black;
+  
+}
+.competences .nom
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  font-weight: 500;
+  margin-right: 40px;
+}
+.bar_container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bar
+{
+  width: 400px;
+  height: 20px;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 5px #4a0000, inset -5px -5px 5px #4a0000;
+}
+.bar .progress
+{
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(180,58,58,1) 20%, rgba(232,91,52,1) 47%, rgba(253,29,29,1) 77%);
+  border-radius: 20px;
+}
+.section_mes_competences button{
+  background-color: #1a0000;
+  margin: 15px 0;
+  box-shadow: 5px 5px 15px #2a0000, -5px -5px 15px #2a0000;
+  padding:20px 40px;
+  text-align: center;
+  border-radius:50px;
+  border: 2px solid #1a0000;
+  transition: 0.2s;
+  color: white;
+  cursor: pointer;
+}
+
+.section_mes_competences button:hover{
+  background-color: #4a0000;
+  box-shadow:5px 5px 15px #2a0000,-5px -5px 15px #2a0000, inset 5px 5px 15px #1a0000, 
+  inset -5px -5px 15px #1a0000; 
+}
+

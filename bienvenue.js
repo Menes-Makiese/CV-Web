@@ -50,3 +50,48 @@ const githubProgress = document.getElementById('githubProgress');
     githubBtn.addEventListener('click', () => {
         fillProgressBar(githubProgress, 80);
     });
+
+    document.addEventListener("scroll", function() {
+        // Récupère la section actuelle
+        const currentSection = getCurrentSection();
+
+        // Applique la couleur de fond du header
+        document.querySelector('header').style.backgroundColor = getComputedStyle(currentSection).backgroundColor;
+    });
+
+    function getCurrentSection() {
+        // Récupère toutes les sections de la page
+        const sections = document.querySelectorAll('section');
+
+        // Trouve la première section qui est partiellement visible
+        for (const section of sections) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                return section;
+            }
+        }
+
+        // Si aucune section n'est partiellement visible, retourne la première section
+        return sections[0];
+    }
+    const hamburgerButton = document.querySelector(".nav_toggler");
+    const navigation = document.querySelector("nav");
+    const navLinks = document.querySelectorAll("nav a");
+    
+    hamburgerButton.addEventListener("click", toggleNav);
+    
+    function toggleNav() {
+      hamburgerButton.classList.toggle("active");
+      navigation.classList.toggle("active");
+    }
+    
+    // Close navigation when a link is clicked
+    navLinks.forEach((link) => {
+      link.addEventListener("click", closeNav);
+    });
+    
+    function closeNav() {
+      hamburgerButton.classList.remove("active");
+      navigation.classList.remove("active");
+    }
+

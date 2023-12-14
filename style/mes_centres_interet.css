@@ -1,40 +1,46 @@
-.section_centres_interet{
-    background-color: #5a0000;
+.section_centres_interet:nth-child(5) {
+    padding: 100px;
 }
-.grid_voyages{ 
+
+.grid_voyages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px 250px;
     gap: 15px;
 }
-.grid_av{
+
+.grid_av {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px 250px;
     gap: 15px;
 }
-.grid_musiques{
+
+.grid_musiques {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px;
     gap: 15px;
     place-items: center;
 }
+
 .grid_voyages img,
 .grid_av img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-.lien_conteneur_photo {
-    position: relative;  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
-iframe{  
-    width:100%;
-    height: 100%;   
+.lien_conteneur_photo {
+    position: relative;
 }
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
 .photo_hover {
     position: absolute;
     top: 0;
@@ -50,77 +56,93 @@ iframe{
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
 }
+
 .lien_conteneur_photo:hover .photo_hover {
     display: flex;
 }
+
 .section_centres_interet h2 {
     text-align: center;
-    padding-top: 20px;     
+    padding-top: 20px;
 }
-.section_centres_interet p{
+
+.section_centres_interet p {
     font-size: 1.5em;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 50px;
 }
-.contenu{
+
+.contenu {
     display: none;
 }
-.position_button{
+
+.position_button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.style_button{
+
+.style_button {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     transition-property: transform;
     transition-duration: 300ms;
+
     &:hover {
         transform: scale(1.25);
     }
 }
-.image_button1{
-    background-image:url(voyage.png);
+
+.image_button1 {
+    background-image: url(voyage.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     cursor: pointer;
 }
-.image_button2{
-    background-image:url(cinema.png);
+
+.image_button2 {
+    background-image: url(cinema.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     cursor: pointer;
 }
-.image_button3{
-    background-image:url(musique.png);
+
+.image_button3 {
+    background-image: url(musique.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     cursor: pointer;
 }
-.section_centres_interet h1{
+
+.section_centres_interet h1 {
     font-size: 3em;
     padding-bottom: 50px;
 }
-blockquote{
+
+blockquote {
     font-style: italic;
     color: #ff7f50;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.5em;
 }
-  
+
 @media screen and (max-width: 996px) {
 
-    .section_centres_interet h1{
+    .section_centres_interet h1 {
         text-align: center;
-    }   
-    .grid_musiques{ 
+    }
+
+    .grid_musiques {
         grid-template-columns: 1fr;
         grid-template-rows: 150px 150px;
         margin-top: 20px;

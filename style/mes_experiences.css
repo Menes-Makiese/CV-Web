@@ -1,5 +1,6 @@
-.section_mes_experiences{
-    background-color: #2a0000;
+.section_mes_experiences:nth-child(4){
+    display: flex;
+    
 }
 .section_mes_experiences h1 {
     font-size: 3em;
@@ -11,12 +12,12 @@
 .mes_experiences{
     display: flex;    
     justify-content:flex-start; 
-    padding-bottom: 20px;      
+    padding-bottom: 10px;      
 }
 .icone_experiences{
     opacity: 0.3;
     transition: opacity 0.5s;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 .icone_experiences:hover{
     opacity: 1;
@@ -40,6 +41,7 @@
 }
 .icone_experiences:hover + .detail_experiences{  
     display: flex;
+    
 }
 
 @media screen and (max-width: 996px) {

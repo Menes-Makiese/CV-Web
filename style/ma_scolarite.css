@@ -1,51 +1,64 @@
-.section_ma_scolarite{
-    background-color:#3a0000;
+.section_ma_scolarite:nth-child(2) {
+    padding: 100px;
+    margin: 20px 100px;
 }
-.section_ma_scolarite h1{
+
+.section_ma_scolarite h1 {
     font-size: 3em;
-    padding-top: 50px;
+    padding-top: 20px;
 }
+
 .parcours_scolaire {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
-    padding-top: 100px; 
+    justify-content: space-between;
+    padding-top: 100px;
     margin-bottom: 80px;
 }
-.annee_parcours{
-    border:2px black solid;
+
+.annee_parcours {
+    border: 2px black solid;
     background-color: #1a0000;
     border-radius: 10%;
-    width:250px;
+    width: 250px;
     text-align: justify;
     padding: 15px;
     box-shadow: 6px 6px 6px rgba(1, 0, 0, 0.8);
     transition: transform 0.3s;
+    z-index: 2;
 }
+
 .annee_parcours:hover {
     transform: scale(1.2)
 }
-.annee_parcours h2,h3{
+
+.annee_parcours h2,
+h3 {
     text-align: center;
 }
-.annee_parcours p{
+
+.annee_parcours p {
     padding-top: 10px;
+
 }
 
 @media screen and (max-width: 996px) {
-    .parcours_scolaire { 
+    .parcours_scolaire {
         flex-direction: column;
-        justify-content:space-between;
-        align-items: center;   
-        padding-top: 20px; 
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
     }
-    .section_ma_scolarite{
+
+    .section_ma_scolarite {
         height: auto;
     }
-    .section_ma_scolarite h1{
+
+    .section_ma_scolarite h1 {
         text-align: center;
     }
-    .annee_parcours{
+
+    .annee_parcours {
         margin-top: 50px;
     }
 }

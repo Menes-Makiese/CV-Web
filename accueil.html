@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bienvenue - Menes Makiese CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/accueil.css">
     <link rel="stylesheet" href="style/a_propos.css">
@@ -15,20 +15,21 @@
     <link rel="stylesheet" href="style/mes_centres_interet.css">
     <link rel="stylesheet" href="style/mes_competences.css">
     <script src="bienvenue.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
 </head>
 
-<body>
+<body id="top">
     <header>
-        <nav>          
+        <nav>
             <a href="accueil.html">
-                <img src="image/favicon-32x32.png" alt="logo Menes Makiese"class="lien_icone_accueil">
-            </a>               
-            <a href="#a_propos" >A propos</a>               
-            <a href="#ma_scolarite" >Scolarité</a>               
-            <a href="#mes_competences" >Compétences</a>                                      
-            <a href="#mes_experiences" >Experiences</a>                              
-            <a href="#mes_centres_interet">Centres d'interet</a>                         
+                <img src="image/favicon-32x32.png" alt="logo Menes Makiese" class="lien_icone_accueil">
+            </a>
+            <a href="#a_propos">A propos</a>
+            <a href="#ma_scolarite">Scolarité</a>
+            <a href="#mes_competences">Compétences</a>
+            <a href="#mes_experiences">Experiences</a>
+            <a href="#mes_centres_interet">Centres d'interet</a>
         </nav>
         <button type="button" aria-label="toggle_curtain_navigation" class="nav_toggler">
             <span class="line l1"></span>
@@ -37,276 +38,343 @@
         </button>
     </header>
     <main>
-        <section class="section_accueil">           
-            <div class="introduction">
-                <a href="#a_propos">                                
-                    <img src ="image/photomenesmakiese.jpg"alt="photo de Menes Makiese"class="border_img">
-                </a>                    
-                <h1>Menes Makiese</h1>                                 
-                <h2>Developpeur Web en Alternance</h2>                                
-            </div>   
-        </section>       
-        <section class="section_a_propos" >           
-            <div>
-                <h1 id="a_propos">A propos</h1>               
-                <p>                                                            
-                    Je vous presente mon CV en format Web. Dans le commerce de l'habillement depuis                
-                    de nombreuses années, j'ai décidé de m'orienter dans un domaine que j'affectionne,               
-                    <em>l'informatique</em>. J'ai toujours voulu comprendre et réaliser des projets informatiques.
-                    De nature autonome, logique et curieux, j'ai pu apprendre gratuitement <strong>les bases du HTML , CSS
-                    et du Javascript</strong> grâce à <em>OpenClassrooms</em>. Je souhaite dorénavant appronfondir ces connaissances 
-                    acquises.                             
-                </p>               
-                <table>                
-                    <tr>                                   
-                        <td>Nom: Makiese Menes</td>                   
-                        <td>Téléphone: 06 45 82 65 68</td>                                                              
-                    </tr>               
-                    <tr>                                           
-                        <td>Adresse: Jouy Le moutier</td>                   
-                        <td>Disponibilité: Immédiat</td>               
-                    </tr>               
-                    <tr>                   
-                        <td>Age: 27ans</td>                   
-                        <td>Experience: Debutant</td>                                       
-                    </tr>                               
-                </table>                
-                <div class="icone_reseaux">               
-                    <a href="https://linkedin.com/in/menes-makiese-457b24296" target="_blank">                   
-                        <img src="image/linkedin.png" alt="Logo Linkedin">               
-                    </a>              
-                    <a href="https://www.instagram.com/"target="_blank" >                   
-                        <img src="image/instagram.png" alt="Logo Instagram">
-                    </a>          
-                </div>       
-            </div>          
-            <img src="image/photodev.jpg" alt="photo_dev" class="photo_dev">              
+    <section class="section_accueil">
+        <div class="introduction">
+            <a href="#a_propos">
+                <img src="image/photomenesmakiese.jpg" alt="photo de Menes Makiese" class="border_img">
+            </a>
+            <h1>Menes Makiese</h1>
+            <h2>Developpeur Web en Alternance</h2>           
+        </div>            
+        <a href="#" class="scroll-down" address="true"></a>
+    </section>
+        <section>
+            <div class="section_a_propos down"  id="a_propos">
+                <div class="container reveal fade-bottom">
+                    <h1>A propos</h1>
+                    <div class="element-container">
+                        <p>
+                            Je vous presente mon CV. Dans le commerce de l'habillement depuis
+                            de nombreuses années, j'ai décidé de m'orienter dans un domaine que j'affectionne,
+                            <em>l'informatique</em>. J'ai toujours voulu comprendre et réaliser des projets
+                            informatiques.
+                            De nature autonome, logique et curieux, je suis actuellement en formation chez
+                            <em>OpenClassrooms</em>
+                            Je souhaite dorénavant appronfondir et démontrer mes competences en intégrant une
+                            entreprise.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Nom: Makiese Menes</td>
+                                <td>Téléphone: 06 45 82 65 68</td>
+                            </tr>
+                            <tr>
+                                <td>Adresse: Jouy Le moutier</td>
+                                <td>Disponibilité: Immédiat</td>
+                            </tr>
+                            <tr>
+                                <td>Age: 27ans</td>
+                                <td>Experience: Junior</td>
+                            </tr>
+                        </table>
+                        <div class="icone_reseaux">
+                            <a href="https://linkedin.com/in/menes-makiese-457b24296" target="_blank">
+                                <img src="image/linkedin.png" alt="Logo Linkedin">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="image/instagram.png" alt="Logo Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container reveal fade-bottom">
+                    <img src="image/photodev.jpg" alt="photo_dev" class="photo_dev">
+                </div>
         </section>
-        <section class="section_ma_scolarite"> 
-            <h1 id="ma_scolarite">Ma Scolarité</h1>                     
-            <div class="parcours_scolaire">            
-                <div class="annee_parcours">                                                
-                    <h2>2014</h2>                                                                       
-                    <h3>Baccalaureat Sciences et Technologie du Management et de la Gestion</h3>                  
-                    <p> Ce bac aborde les grandes questions de la gestion des organisations, par exemple :                        
-                        le rôle du facteur humain, les différentes approches de la valeur, l’information                                   
-                        et la communication. Cette formation a eté fait dans le lycée Condorcet à Limay(78)                       
-                    </p>                  
-                </div>              
-                <div class="annee_parcours">                 
-                    <h2>2016</h2>                
-                    <h3>Brevet de Technicien Supérieur en Management des Unités Commerciales</h3>                 
-                    <p>Le BTS MUC, anciennement BTS Action Commerciale, prépare les étudiants à diverses                           
-                        techniques de vente et de management. Ces compétences seront utilisées pour gérer des                            
-                        unités commerciales et développer l’activité de l’entreprise pour laquelle on doit travailler.                           
-                        Cette formation a été fait a l'Ecole Superieur de Vente à Saint-Germain en Laye(78)               
-                    </p>                                                     
-                </div>            
-                <div class="annee_parcours">                
-                    <h2>2017</h2>                
-                    <h3>Licence Professionnelle Management Du Point de Vente</h3>                   
-                    <p> Cette licence est destiné à former les étudiants aux métiers de l’administration générale,
-                        du management et pilotage des activités, ainsi que du support opérationnel des entreprises                   
-                        La formation est centrée sur l’acquisition de compétences et connaissances applicables                                              
-                        directement en entreprise à l’issue de la formation.                       
-                        Cette formation a été fait au CIEFA du groupe IGS dans le campus de Paris               
-                    </p>     
-                </div>       
-            </div>
-        </section>
-        <section class="section_mes_competences">
-            <h1 id="mes_competences">Mes Competences</h1>                       
-            <div class="competences">
-                <div class="nom">
-                    <button id="htmlBtn">HTML</button>
-                    <button id="cssBtn">CSS</button>
-                    <button id="javascriptBtn">JavaScript</button>
-                    <button id="githubBtn">GitHub</button>
-                </div>
-                <div class="bar_container">
-                    <div class="bar">
-                        <div class="progress" id="htmlProgress"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="progress" id="cssProgress"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="progress" id="javascriptProgress"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="progress" id="githubProgress"></div>
+        <section>
+            <div class="section_ma_scolarite">
+                <div class="container reveal fade-left">
+                    <h1 id="ma_scolarite">Ma Scolarité</h1>
+                    <div class="parcours_scolaire">
+                        <div class="annee_parcours">
+                            <h2>2016</h2>
+                            <h3>BTS Management des Unités Commerciales en Alternance</h3>
+                            <p>Le BTS MUC, anciennement BTS Action Commerciale, prépare les étudiants à diverses
+                                techniques de vente et de management. Ces compétences seront utilisées pour <em>gérer
+                                    des
+                                    unités commerciales</em> et <em>développer l’activité de l’entreprise</em> pour
+                                laquelle on
+                                doit travailler.
+                                Cette formation a été fait a l'Ecole Superieur de Vente à Saint-Germain en Laye(78).
+                            </p>
+                        </div>
+                        <div class="annee_parcours">
+                            <h2>2017</h2>
+                            <h3>Licence Professionnelle Management Du Point de Vente en Alternance</h3>
+                            <p> Cette licence est destiné à <em>former les étudiants aux métiers de l’administration
+                                    générale,
+                                    du management et pilotage des activités</em>, ainsi que du support opérationnel des
+                                entreprises
+                                La formation est centrée sur l’acquisition de compétences et connaissances applicables
+                                directement en entreprise à l’issue de la formation.
+                                Cette formation a été fait au CIEFA du groupe IGS dans le campus de Paris
+                            </p>
+                        </div>
+                        <div class="annee_parcours">
+                            <h2>2023</h2>
+                            <h3>Formation Developpeur Web en Alternance (en cours)</h3>
+                            <p> Cette formation a pour objectif de <em>construire un site web responsive et
+                                    dynamique.</em>
+                                <em>Créer des API et des bases de données</em> pour développer des sites complets et
+                                dynamiques
+                                et assurer le bon fonctionnement côté serveur.
+                                <em>Optimiser les performances</em> et <em>réaliser la maintenance</em> de sites web
+                                déjà
+                                existants.
+                                <em>Gérer un projet web de A à Z</em> : de la planification du projet à la présentation
+                                de la
+                                solution
+                                au client, en passant par la rédaction des spécifications techniques.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section_mes_experiences">                            
-            <h1 id="mes_experiences">Mes experiences</h1>           
-            <div class="mes_experiences">                   
-                <div class="icone_experiences"><!--Les differentes enseignes sous formes d'icones , en cliquant vous serez dirigez vers la présentation de ces enseignes-->                     
-                    <a href="https://www.fendi.com/fr-fr/inside-fendi" target="_blank">                        
-                        <img src="image/fendi.jpg" class="lien_icone">                    
-                    </a>                
-                </div>               
-                <div class="detail_experiences">                     
-                    <h2>Décembre 2022 à Mai 2023</h2>                                              
-                    <p>J'ai travaillé pour la Maison Fendi dans le grand magasin Galeries Lafayette.<br>                           
-                        En tant que conseiller de vente j'ai pu réaliser differentes taches:<br>                    
-                    </p>                                                                                                                
-                    <ul>                        
-                        <li>L'ouverture et Fermeture du stand,</li>                        
-                        <li>Analyse des indicateurs de performances,</li>                        
-                        <li>Mettre en place des actions correctrices,</li>                       
-                        <li>La gestion des stocks.</li>                   
-                    </ul>               
+        <section>
+            <div class="section_mes_competences">
+                <div class="container reveal fade-left">
+                    <h1 id="mes_competences">Mes Competences</h1>
+                    <div class="container_competences">
+                        <div class="techniques">
+                            <div class="nom">
+                                <button id="htmlBtn">HTML</button>
+                                <button id="cssBtn">CSS</button>
+                                <button id="javascriptBtn">JavaScript</button>
+                                <button id="githubBtn">GitHub</button>
+                            </div>
+                            <div class="bar_container">
+                                <div class="bar">
+                                    <div class="progress" id="htmlProgress"></div>
+                                </div>
+                                <div class="bar">
+                                    <div class="progress" id="cssProgress"></div>
+                                </div>
+                                <div class="bar">
+                                    <div class="progress" id="javascriptProgress"></div>
+                                </div>
+                                <div class="bar">
+                                    <div class="progress" id="githubProgress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="savoirEtre">
+                            <div class="nom">
+                                <button id="communicationBtn">Communication</button>
+                                <button id="autonomieBtn">Autonomie</button>
+                                <button id="creativiteBtn">Creativite</button>
+                                <button id="motivationBtn">Motivation</button>
+                            </div>
+                            <div class="bar_container">
+                                <div class="bar">
+                                    <div class="progress" id="communicationProgress"></div>
+                                </div>
+                                <div class="bar">
+                                    <div class="progress" id="autonomieProgress"></div>
+                                </div>
+                                <div class="bar">
+                                    <div class="progress" id="creativiteProgress"></div>
+                                </div>
+                                <div class="bar">
+                                    <div class="progress" id="motivationProgress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mes_experiences">                
-                <div class="icone_experiences">                    
-                    <a href="https://www.ralphlauren.fr/fr/decouvrir/70?webcat=brands" target="_blank">                       
-                        <img src="image/ralphlaurenlogo.jpg" class="lien_icone">                    
-                    </a>               
-                </div>                
-                <div class="detail_experiences">                    
-                    <h2>Mai 2021 à Octobre 2022</h2>                   
-                    <p>J'ai travaillé pour l'enseigne Ralph Lauren dans le centre commercial Wesfield 4 Temps.<br>                       
-                        En tant que conseiller de vente j'ai pu réaliser differentes taches:<br>                         
-                    </p>                   
-                    <ul>                       
-                        <li>L'ouverture et Fermeture du magasin,</li>                        
-                        <li>Analyse des indicateurs de performances,</li>                       
-                        <li>Mettre en place des actions correctrices,</li>                        
-                        <li>La gestion des stocks.</li>                   
-                    </ul>              
+        </section>
+        <section>
+            <div class="section_mes_experiences">
+                <div class="container reveal fade-bottom">
+                    <h1 id="mes_experiences">Mes experiences</h1>
                 </div>
-            </div>  
-            <div class="mes_experiences">         
-                <div class="icone_experiences">                    
-                    <a href="https://www.fromfuture.com/pages/nos-valeurs" target="_blank">                        
-                        <img src="image/fromfuturelogo.jpg" class="lien_icone">                   
-                    </a>               
-                </div>               
-                <div class="detail_experiences">                    
-                    <h2>Septembre 2020 à Avril 2021</h2>                   
-                    <p>J'ai travaillé pour l'enseigne From Future dans la boutique de Paris dans le 4ème arrondissement.<br>                       
-                        En tant que conseiller de vente j'ai pu réaliser differentes taches:<br>                   
-                    </p>                   
-                    <ul>                       
-                        <li>L'ouverture et Fermeture du magasin,</li>                                                                  
-                        <li>Analyse des indicateurs de performances,</li>                        
-                        <li>Mettre en place des actions correctrices,</li>                       
-                        <li>La gestion des stocks.</li>                                                     
-                    </ul>                                               
+                <div class="container reveal fade-left">
+                    <div class="mes_experiences">
+                        <div class="icone_experiences">
+                            <!--Les differentes enseignes sous formes d'icones , en cliquant vous serez dirigez vers la présentation de ces enseignes-->
+                            <a href="https://www.fendi.com/fr-fr/inside-fendi" target="_blank">
+                                <img src="image/fendi.jpg" class="lien_icone">
+                            </a>
+                        </div>
+                        <div class="detail_experiences">
+                            <h2>Décembre 2022 à Mai 2023</h2>
+                            <p>J'ai travaillé en CDI pour la Maison Fendi dans le grand magasin Galeries Lafayette.<br>
+                                En tant que conseiller de vente j'ai pu réaliser differentes taches:<br>
+                            </p>
+                            <ul>
+                                <li>L'ouverture et Fermeture du stand,</li>
+                                <li>Analyse des indicateurs de performances,</li>
+                                <li>Mettre en place des actions correctrices,</li>
+                                <li>La gestion des stocks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mes_experiences">
+                        <div class="icone_experiences">
+                            <a href="https://www.ralphlauren.fr/fr/decouvrir/70?webcat=brands" target="_blank">
+                                <img src="image/ralphlaurenlogo.jpg" class="lien_icone">
+                            </a>
+                        </div>
+                        <div class="detail_experiences">
+                            <h2>Mai 2021 à Octobre 2022</h2>
+                            <p>J'ai travaillé en CDI pour l'enseigne Ralph Lauren dans le centre commercial Wesfield 4
+                                Temps.<br>
+                                En tant que conseiller de vente j'ai pu réaliser differentes taches:<br>
+                            </p>
+                            <ul>
+                                <li>L'ouverture et Fermeture du magasin,</li>
+                                <li>Analyse des indicateurs de performances,</li>
+                                <li>Mettre en place des actions correctrices,</li>
+                                <li>La gestion des stocks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mes_experiences">
+                        <div class="icone_experiences">
+                            <a href="https://www.fromfuture.com/pages/nos-valeurs" target="_blank">
+                                <img src="image/fromfuturelogo.jpg" class="lien_icone">
+                            </a>
+                        </div>
+                        <div class="detail_experiences">
+                            <h2>Septembre 2020 à Avril 2021</h2>
+                            <p>J'ai travaillé en CDI pour l'enseigne From Future dans la boutique de Paris dans le 4ème
+                                arrondissement.<br>
+                                En tant que conseiller de vente j'ai pu réaliser differentes taches:<br>
+                            </p>
+                            <ul>
+                                <li>L'ouverture et Fermeture du magasin,</li>
+                                <li>Analyse des indicateurs de performances,</li>
+                                <li>Mettre en place des actions correctrices,</li>
+                                <li>La gestion des stocks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mes_experiences">
+                        <div class="icone_experiences">
+                            <a href="https://corporate.lidl.fr/decouvrir-lidl" target="_blank">
+                                <img src="image/lidllogo.jpg" class="lien_icone">
+                            </a>
+                        </div>
+                        <div class="detail_experiences">
+                            <h2>Octobre 2019 à Mars 2020</h2>
+                            <p>J'ai travaillé en CDI pour l'enseigne Lidl dans le magasin de Carrière Sous Poissy.<br>
+                                En tant que Responsable Adjoint j'ai pu réaliser differentes taches:<br>
+                            </p>
+                            <ul>
+                                <li>L'ouverture et Fermeture du magasin,</li>
+                                <li>Analyse des indicateurs de performances,</li>
+                                <li>Mettre en place des actions correctrices, </li>
+                                <li>La gestion des stocks,</li>
+                                <li>La gestion des caisses.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mes_experiences">               
-                <div class="icone_experiences">                                    
-                    <a href="https://corporate.lidl.fr/decouvrir-lidl" target="_blank">                        
-                        <img src="image/lidllogo.jpg" class="lien_icone">                   
-                    </a>               
-                </div>               
-                <div class="detail_experiences">                   
-                    <h2>Octobre 2019 à Mars 2020</h2>                                                                
-                    <p>J'ai travaillé pour l'enseigne Lidl dans le magasin de Carrière Sous Poissy.<br>                        
-                        En tant que Responsable Adjoint j'ai pu réaliser differentes taches:<br>                    
-                    </p>                                                                     
-                    <ul>                       
-                        <li>L'ouverture et Fermeture du magasin,</li>                       
-                        <li>Analyse des indicateurs de performances,</li>                       
-                        <li>Mettre en place des actions correctrices, </li>                       
-                        <li>La gestion des stocks,</li>                       
-                        <li>La gestion des caisses.</li>                   
-                    </ul>                        
-                </div>            
-            </div>            
-        </section>       
-        <section class="section_centres_interet">           
-            <h1 id="mes_centres_interet">Centres d'intérêt</h1>           
-            <div class="position_button">        
-                <button id="toggleButton1" class="style_button affichage_button image_button1" title="VOYAGER"></button>          
-                <button id="toggleButton2"class="style_button affichage_button image_button2" title="CINEMA"></button>           
-                <button id="toggleButton3" class="style_button affichage_button image_button3" title="MUSIQUE"></button>       
-            </div>                          
+        </section>
+        <section>
+            <div class="section_centres_interet">
+                <div class="container reveal fade-bottom">
+                    <h1 id="mes_centres_interet">Centres d'intérêt</h1>
+                    <div class="position_button">
+                        <button id="toggleButton1" class="style_button affichage_button image_button1"
+                            title="VOYAGER"></button>
+                        <button id="toggleButton2" class="style_button affichage_button image_button2"
+                            title="CINEMA"></button>
+                        <button id="toggleButton3" class="style_button affichage_button image_button3"
+                            title="MUSIQUE"></button>
+                    </div>
+                </div>
+            </div>
             <div id="elementsToDisplay1" class="contenu">
-                <blockquote>     
-                    <p>«L'instant le plus heureux d'une vie humaine est le départ vers une terre inconnue.»<br>Richard Burton</p>                                           
-                </blockquote>              
-                <div class="grid_voyages">                
-                    <a href="image/photonz1.jpeg" class="lien_conteneur_photo" target="_blank">                 
-                        <img src="image/photonz1.jpeg" alt="photo de Te Whanganui">                                                         
-                        <div class="photo_hover">NOUVELLE-ZELANDE<br>Te Whanganui</div>                                                      
-                    </a>                                      
-                    <a href="image/photomaroc1.JPEG" class="lien_conteneur_photo" target="_blank">         
-                        <img src="image/photomaroc1.JPEG" alt="photo des cascade de Ait Taguella">                   
-                        <div class="photo_hover">MAROC<br>Cascade Ait Taguella</div>               
-                    </a>               
-                    <a href="image/photorome3.jpeg" class="lien_conteneur_photo" target="_blank">                    
-                        <img src="image/photorome3.jpeg" alt="photo du musée du Vatican">                   
-                        <div class="photo_hover">ROME<br>Musée du Vatican</div>               
-                    </a>               
-                    <a href="image/photonz3.JPG" class="lien_conteneur_photo" target="_blank">                                               
-                        <img src="image/photonz3.JPG" alt ="photo de Queenstown">                   
-                        <div class="photo_hover">NOUVELLE-ZELANDE<br>Queenstown</div>                
-                    </a>                
-                    <a href="image/photomaroc2.JPEG" class="lien_conteneur_photo" target="_blank">                    
-                        <img src="image/photomaroc2.JPEG" alt="photo des jardins de Tassoultante">                    
-                        <div class="photo_hover">MAROC<br>Jardin de Tassoultante</div>                
-                    </a>               
-                    <a href="image/photorome2.JPG" class="lien_conteneur_photo" target="_blank">               
-                        <img src="image/photorome2.JPG" alt="photo des catacombes">                    
-                        <div class="photo_hover">ROME<br>Les catacombes</div>               
-                    </a>           
-                </div>       
-            </div>       
+                <blockquote>
+                    <p>«L'instant le plus heureux d'une vie humaine est le départ vers une terre inconnue.»<br>Richard
+                        Burton</p>
+                </blockquote>
+                <div class="grid_voyages">
+                    <a href="image/photonz1.jpeg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/photonz1.jpeg" alt="photo de Te Whanganui">
+                        <div class="photo_hover">NOUVELLE-ZELANDE<br>Te Whanganui</div>
+                    </a>
+                    <a href="image/photomaroc1.JPEG" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/photomaroc1.JPEG" alt="photo des cascade de Ait Taguella">
+                        <div class="photo_hover">MAROC<br>Cascade Ait Taguella</div>
+                    </a>
+                    <a href="image/photorome3.jpeg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/photorome3.jpeg" alt="photo du musée du Vatican">
+                        <div class="photo_hover">ROME<br>Musée du Vatican</div>
+                    </a>
+                    <a href="image/photonz3.JPG" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/photonz3.JPG" alt="photo de Queenstown">
+                        <div class="photo_hover">NOUVELLE-ZELANDE<br>Queenstown</div>
+                    </a>
+                    <a href="image/photomaroc2.JPEG" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/photomaroc2.JPEG" alt="photo des jardins de Tassoultante">
+                        <div class="photo_hover">MAROC<br>Jardin de Tassoultante</div>
+                    </a>
+                    <a href="image/photorome2.JPG" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/photorome2.JPG" alt="photo des catacombes">
+                        <div class="photo_hover">ROME<br>Les catacombes</div>
+                    </a>
+                </div>
+            </div>
             <div id="elementsToDisplay2" class="contenu">
-                <blockquote>               
-                    <p>«Le cinéma est un mélange parfait de vérité et de spectacle.»<br>François Truffaut</p>           
-                </blockquote>         
-                <div class="grid_av">               
-                    <a href="image/whiplash.jpg" class="lien_conteneur_photo" target="_blank">                 
-                        <img src="image/whiplash.jpg" alt="Film Whiplash">                    
-                        <div class="photo_hover">WHIPLASH<br>Damien Chazelle</div>               
-                    </a>               
-                    <a href="image/leparrain.jpg" class="lien_conteneur_photo" target="_blank">                   
-                        <img src="image/leparrain.jpg" alt="Film Le Parrain">                                                
-                        <div class="photo_hover">LE PARRAIN<br>Francis Ford Coppola</div>               
-                    </a>              
-                    <a href="image/sda.jpg" class="lien_conteneur_photo" target="_blank">                                                 
-                        <img src ="image/sda.jpg" alt="Film Le Seigneur des Anneaux">                                                 
-                        <div class="photo_hover">LE SEIGNEUR DES ANNEAUX<br>Peter Jackson</div>               
-                    </a>               
-                    <a href="image/twinpeaks.jpg" class="lien_conteneur_photo" target="_blank">                    
-                        <img src="image/twinpeaks.jpg" alt="Twin peaks">                   
-                        <div class="photo_hover">TWIN PEAKS<br> David Lynch</div>               
-                    </a>                
-                    <a href="image/mrrobot.jpg" class="lien_conteneur_photo" target="_blank">                   
-                        <img src="image/mrrobot.jpg" alt="Mr Robot">                   
-                        <div class="photo_hover">Mr.ROBOT<br>Sam Esmail</div>               
-                    </a>               
-                    <a href="image/lessopranos.jpg" class="lien_conteneur_photo" target="_blank">                   
-                        <img src="image/lessopranos.jpg" alt="Les Sopranos">                                                  
-                        <div class="photo_hover">LES SOPRANOS<br>David Chase</div>                
-                    </a>           
-                </div>       
-            </div>          
-            <div id="elementsToDisplay3" class="contenu"> 
-                <blockquote>                      
-                    <p>«Si l'on n'avait pas d'âme, la musique l'aurait créée.»<br>Emil Cioran</p>            
-                </blockquote>           
-                <div class="grid_musiques"> <!--le lien de mes musiques favorites ;)-->                                       
-                    <iframe src="https://open.spotify.com/embed/track/7H3ojI1BsVy0dEJENqMt1k?si=c5bdd32bf0154610"               
-                    frameborder="0"allowtransparency="true"allow="encrypted-media"></iframe>                             
-                    <iframe src="https://open.spotify.com/embed/track/3xMQOd1C3TXsjQ3pmzOmkC?si=93173f025d814924"              
-                    frameborder="0"allowtransparency="true"allow="encrypted-media"></iframe>               
-                    <iframe src="https://open.spotify.com/embed/track/1sTWIzAlg8HapeWz2fXvfJ?si=b2a3528aa9554e12"           
-                    frameborder="0"allowtransparency="true"allow="encrypted-media"></iframe>           
-                </div>           
-            </div>                                                            
+                <blockquote>
+                    <p>«Le cinéma est un mélange parfait de vérité et de spectacle.»<br>François Truffaut</p>
+                </blockquote>
+                <div class="grid_av">
+                    <a href="image/whiplash.jpg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/whiplash.jpg" alt="Film Whiplash">
+                        <div class="photo_hover">WHIPLASH<br>Damien Chazelle</div>
+                    </a>
+                    <a href="image/leparrain.jpg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/leparrain.jpg" alt="Film Le Parrain">
+                        <div class="photo_hover">LE PARRAIN<br>Francis Ford Coppola</div>
+                    </a>
+                    <a href="image/sda.jpg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/sda.jpg" alt="Film Le Seigneur des Anneaux">
+                        <div class="photo_hover">LE SEIGNEUR DES ANNEAUX<br>Peter Jackson</div>
+                    </a>
+                    <a href="image/twinpeaks.jpg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/twinpeaks.jpg" alt="Twin peaks">
+                        <div class="photo_hover">TWIN PEAKS<br> David Lynch</div>
+                    </a>
+                    <a href="image/mrrobot.jpg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/mrrobot.jpg" alt="Mr Robot">
+                        <div class="photo_hover">Mr.ROBOT<br>Sam Esmail</div>
+                    </a>
+                    <a href="image/lessopranos.jpg" class="lien_conteneur_photo" target="_blank">
+                        <img src="image/lessopranos.jpg" alt="Les Sopranos">
+                        <div class="photo_hover">LES SOPRANOS<br>David Chase</div>
+                    </a>
+                </div>
+            </div>
+            <div id="elementsToDisplay3" class="contenu">
+                <blockquote>
+                    <p>«Si l'on n'avait pas d'âme, la musique l'aurait créée.»<br>Emil Cioran</p>
+                </blockquote>
+                <div class="grid_musiques"> <!--le lien de mes musiques favorites ;)-->
+                    <iframe src="https://open.spotify.com/embed/track/7H3ojI1BsVy0dEJENqMt1k?si=c5bdd32bf0154610"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/track/3xMQOd1C3TXsjQ3pmzOmkC?si=93173f025d814924"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/track/6A3Q8BVAAI2PW1s6MX4ZGF?utm_source=generator"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+            </div>
         </section>
-    </main>
-    <footer>
-        <a href="accueil.html">
-            <img src="image/favicon-32x32.png" alt="logo Menes Makiese"class="lien_icone_accueil">
-        </a>          
-    </footer>   
 </body>
+
 </html>

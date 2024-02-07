@@ -14,8 +14,16 @@
     <link rel="stylesheet" href="style/ma_scolarite.css">
     <link rel="stylesheet" href="style/mes_centres_interet.css">
     <link rel="stylesheet" href="style/mes_competences.css">
+<<<<<<< HEAD
     <script src="bienvenue.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+=======
+    <script src="script/script.js" defer></script>
+    <script src="script/mes_competences.js" defer></script>
+    <script src="script/mes_centres_interets.js" defer></script>
+    <script src="" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+>>>>>>> 0f7f990 (CV web)
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
 </head>
 
@@ -38,30 +46,32 @@
         </button>
     </header>
     <main>
-    <section class="section_accueil">
-        <div class="introduction">
-            <a href="#a_propos">
-                <img src="image/photomenesmakiese.jpg" alt="photo de Menes Makiese" class="border_img">
-            </a>
-            <h1>Menes Makiese</h1>
-            <h2>Developpeur Web en Alternance</h2>           
-        </div>            
-        <a href="#" class="scroll-down" address="true"></a>
-    </section>
+        <section class="section_accueil">
+            <div class="introduction">
+                <a href="#a_propos">
+                    <img src="image/photomenesmakiese.jpg" alt="photo de Menes Makiese" class="border_img">
+                </a>
+                <h1>Menes Makiese</h1>
+                <h2>Developpeur Web & Web Mobile</h2>
+            </div>
+            <a href="#" class="scroll-down" address="true"></a>
+        </section>
         <section>
-            <div class="section_a_propos down"  id="a_propos">
+            <div class="section_a_propos down" id="a_propos">
                 <div class="container reveal fade-bottom">
-                    <h1>A propos</h1>
+
                     <div class="element-container">
+                        <h1>A propos</h1>
                         <p>
-                            Je vous presente mon CV. Dans le commerce de l'habillement depuis
+                            Bonjour, je vous presente mon CV. Dans le commerce de l'habillement depuis
                             de nombreuses années, j'ai décidé de m'orienter dans un domaine que j'affectionne,
                             <em>l'informatique</em>. J'ai toujours voulu comprendre et réaliser des projets
                             informatiques.
-                            De nature autonome, logique et curieux, je suis actuellement en formation chez
-                            <em>OpenClassrooms</em>
-                            Je souhaite dorénavant appronfondir et démontrer mes competences en intégrant une
-                            entreprise.
+                            De nature autonome, logique et curieux, j'ai pu apprendre en autodidacte les bases du
+                            developpement web.
+                            Je souhaite dorénavant appronfondir et démontrer mes competences en intégrant une ecole et
+                            avoir
+                            la possibilité mettre la theorie en pratique.
                         </p>
                         <table>
                             <tr>
@@ -204,7 +214,7 @@
                         <div class="icone_experiences">
                             <!--Les differentes enseignes sous formes d'icones , en cliquant vous serez dirigez vers la présentation de ces enseignes-->
                             <a href="https://www.fendi.com/fr-fr/inside-fendi" target="_blank">
-                                <img src="image/fendi.jpg" class="lien_icone">
+                                <img src="image/fendi.jpg" title="Dirige vers fendi.com" class="lien_icone">
                             </a>
                         </div>
                         <div class="detail_experiences">
@@ -223,7 +233,8 @@
                     <div class="mes_experiences">
                         <div class="icone_experiences">
                             <a href="https://www.ralphlauren.fr/fr/decouvrir/70?webcat=brands" target="_blank">
-                                <img src="image/ralphlaurenlogo.jpg" class="lien_icone">
+                                <img src="image/ralphlaurenlogo.jpg" title="Dirige vers ralphlauren.com"
+                                    class="lien_icone">
                             </a>
                         </div>
                         <div class="detail_experiences">
@@ -243,7 +254,7 @@
                     <div class="mes_experiences">
                         <div class="icone_experiences">
                             <a href="https://www.fromfuture.com/pages/nos-valeurs" target="_blank">
-                                <img src="image/fromfuturelogo.jpg" class="lien_icone">
+                                <img src="image/fromfuturelogo.jpg" alt="Dirige vers fromfuture.com" class="lien_icone">
                             </a>
                         </div>
                         <div class="detail_experiences">
@@ -263,7 +274,7 @@
                     <div class="mes_experiences">
                         <div class="icone_experiences">
                             <a href="https://corporate.lidl.fr/decouvrir-lidl" target="_blank">
-                                <img src="image/lidllogo.jpg" class="lien_icone">
+                                <img src="image/lidllogo.jpg" alt="Dirige vers Lidl.com" class="lien_icone">
                             </a>
                         </div>
                         <div class="detail_experiences">
@@ -303,30 +314,42 @@
                         Burton</p>
                 </blockquote>
                 <div class="grid_voyages">
-                    <a href="image/photonz1.jpeg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/photonz1.jpeg" alt="photo de Te Whanganui">
-                        <div class="photo_hover">NOUVELLE-ZELANDE<br>Te Whanganui</div>
-                    </a>
-                    <a href="image/photomaroc1.JPEG" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/photomaroc1.JPEG" alt="photo des cascade de Ait Taguella">
-                        <div class="photo_hover">MAROC<br>Cascade Ait Taguella</div>
-                    </a>
-                    <a href="image/photorome3.jpeg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/photorome3.jpeg" alt="photo du musée du Vatican">
-                        <div class="photo_hover">ROME<br>Musée du Vatican</div>
-                    </a>
-                    <a href="image/photonz3.JPG" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/photonz3.JPG" alt="photo de Queenstown">
-                        <div class="photo_hover">NOUVELLE-ZELANDE<br>Queenstown</div>
-                    </a>
-                    <a href="image/photomaroc2.JPEG" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/photomaroc2.JPEG" alt="photo des jardins de Tassoultante">
-                        <div class="photo_hover">MAROC<br>Jardin de Tassoultante</div>
-                    </a>
-                    <a href="image/photorome2.JPG" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/photorome2.JPG" alt="photo des catacombes">
-                        <div class="photo_hover">ROME<br>Les catacombes</div>
-                    </a>
+                    <img class="myImg" src="image/photonz1.jpeg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">NOUVELLE-ZELANDE<br>Te Whanganui</div>
+                    </div>
+                    <img class="myImg" src="image/photomaroc1.JPEG">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">MAROC<br>Cascade Ait Taguella</div>
+                    </div>
+                    <img class="myImg" src="image/photorome3.jpeg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">ROME<br>Muséee du Vatican</div>
+                    </div>
+                    <img class="myImg" src="image/photonz3.JPG">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">NOUVELLE-ZELANDE<br>Queenstown City</div>
+                    </div>
+                    <img class="myImg" src="image/photomaroc2.JPEG">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">MAROC<br>Jardin de Tassoultante</div>
+                    </div>
+                    <img class="myImg" src="image/photorome2.JPG">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">ROME<br>Les catacombes</div>
+                    </div>
                 </div>
             </div>
             <div id="elementsToDisplay2" class="contenu">
@@ -334,37 +357,49 @@
                     <p>«Le cinéma est un mélange parfait de vérité et de spectacle.»<br>François Truffaut</p>
                 </blockquote>
                 <div class="grid_av">
-                    <a href="image/whiplash.jpg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/whiplash.jpg" alt="Film Whiplash">
-                        <div class="photo_hover">WHIPLASH<br>Damien Chazelle</div>
-                    </a>
-                    <a href="image/leparrain.jpg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/leparrain.jpg" alt="Film Le Parrain">
-                        <div class="photo_hover">LE PARRAIN<br>Francis Ford Coppola</div>
-                    </a>
-                    <a href="image/sda.jpg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/sda.jpg" alt="Film Le Seigneur des Anneaux">
-                        <div class="photo_hover">LE SEIGNEUR DES ANNEAUX<br>Peter Jackson</div>
-                    </a>
-                    <a href="image/twinpeaks.jpg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/twinpeaks.jpg" alt="Twin peaks">
-                        <div class="photo_hover">TWIN PEAKS<br> David Lynch</div>
-                    </a>
-                    <a href="image/mrrobot.jpg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/mrrobot.jpg" alt="Mr Robot">
-                        <div class="photo_hover">Mr.ROBOT<br>Sam Esmail</div>
-                    </a>
-                    <a href="image/lessopranos.jpg" class="lien_conteneur_photo" target="_blank">
-                        <img src="image/lessopranos.jpg" alt="Les Sopranos">
-                        <div class="photo_hover">LES SOPRANOS<br>David Chase</div>
-                    </a>
+                    <img class="myImg" src="image/whiplash.jpg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">WHIPLASH<br>De Damien Chazelle</div>
+                    </div>
+                    <img class="myImg" src="image/leparrain.jpg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">LE PARRAIN<br>De Francis Ford Coppola</div>
+                    </div>
+                    <img class="myImg" src="image/sda.jpg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">LE SEIGNEUR DES ANNEAUX<br>De Peter Jackson</div>
+                    </div>
+                    <img class="myImg" src="image/twinpeaks.jpg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">TWIN PEAKS<br>De David Lynch</div>
+                    </div>
+                    <img class="myImg" src="image/mrrobot.jpg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">MR.ROBOT<br>De Sam Esmail</div>
+                    </div>
+                    <img class="myImg" src="image/lessopranos.jpg">
+                    <div class="myModal modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content">
+                        <div id="caption">LES SOPRANOS<br>De David Chase</div>
+                    </div>
                 </div>
             </div>
             <div id="elementsToDisplay3" class="contenu">
                 <blockquote>
                     <p>«Si l'on n'avait pas d'âme, la musique l'aurait créée.»<br>Emil Cioran</p>
                 </blockquote>
-                <div class="grid_musiques"> <!--le lien de mes musiques favorites ;)-->
+                <div class="grid_musiques">
                     <iframe src="https://open.spotify.com/embed/track/7H3ojI1BsVy0dEJENqMt1k?si=c5bdd32bf0154610"
                         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <iframe src="https://open.spotify.com/embed/track/3xMQOd1C3TXsjQ3pmzOmkC?si=93173f025d814924"

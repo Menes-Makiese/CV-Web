@@ -29,7 +29,8 @@
 }
 
 .annee_parcours:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
+    z-index: 10;
 }
 
 .annee_parcours h2,
